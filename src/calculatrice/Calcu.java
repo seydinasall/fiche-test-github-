@@ -109,7 +109,11 @@ public class Calcu extends JFrame {
           break;
       }
     }
-    //----ajout de l'écran au pannel
+    panEcran.add(ecran);
+    panEcran.setBorder(BorderFactory.createLineBorder(Color.black));
+    container.add(panEcran, BorderLayout.NORTH);
+    container.add(chiffre, BorderLayout.CENTER);
+    container.add(operateur, BorderLayout.EAST);
   }
 
   //Méthode permettant d'effectuer un calcul selon l'opérateur sélectionné
